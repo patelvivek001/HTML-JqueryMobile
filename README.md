@@ -1,2 +1,2 @@
 # HTML-JqueryMobile
-HTML Website eith Jquery Mobile
+HTML Website with Jquery Mobile
