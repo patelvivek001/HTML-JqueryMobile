@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Shopper</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!--<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />-->
+</head>
+<body>
+    <div data-theme="a" data-role="page">
+        <div data-role="header">
+            <img src="../images/logo.jpg" height="100" width="100" style="border-radius: 50%;margin-left:45%" />
+        </div>
+        <div data-role="main" class="ui-content" style="width:25%;margin-left:35%;">
+            <input type="text" placeholder="Enter your name" id="txtName" />
+            <input type="text" placeholder="Enter your email" id="txtEmailID" />
+            <input type="text" placeholder="Enter your password" id="txtPassword" />
+            <textarea placeholder="Enter your address" id="txtAddress" ></textarea>
+            <input type="text" placeholder="Enter your number" id="txtNo" />
+            <button id="btnSignup"> SignUp </button>
+        </div>
+    </div>
+    <script>
+			$(document).ready(function(){
+				$("#btnSignup").click(function () {
+				    window.location.href = "index.html";
+				});
+			});
+    </script>
+</body>
+</html>

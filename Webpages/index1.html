@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Shopper</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+</head>
+	<body>
+		<div data-theme="b" data-role="page">
+			<div  data-role="header">
+                <img src="../images/logo.jpg" height="80" width="80" style="border-radius: 50%;margin-left:47%" />
+                <h1>Welcome to shopper</h1>
+			</div>
+			<div  data-role="main" class="ui-content">
+				<ul data-autodividers="true" data-filter="true" data-role="listview" data-inset="true">
+				    <li id="walmart">
+                        <a><img src="../images/walmart.jpg" style="height: 85%;max-width: 6em;">
+                        <div>
+                            <strong>Walmart Toronto Agincourt Store</strong><br />
+                            <strong>3850 Sheppard Ave E, Scarborough, ON M1T 3L3 Phone: (416) 291-4100</strong>
+                        </div>
+                        </a>
+                    </li>
+				    <li id="bestbuy">
+                        <a><img src="../images/bestbuy.jpg" style="height: 85%;max-width: 6em;">
+                            <div>
+                                <strong>Best Buy Mobile</strong><br />
+                                <strong>1800 Sheppard Ave E Unit 1040, North York, ON M2J 5A7 Phone: (416) 640-1443</strong>
+                            </div>
+                        </a>
+                    </li>
+				    <li id="sears">
+                        <a><img src="../images/sears.jpeg" style="height: 85%;max-width: 6em;">
+                            <div>
+                                <strong>Sears</strong><br />
+                                <strong>1800 Sheppard Ave E, North York, ON M2J 5A7 Phone: (416) 502-3737</strong>
+                            </div>
+                        </a>
+                    </li>
+				</ul>
+			</div>
+			<div data-role="footer">
+				<div data-role="navbar">
+				    <ul>
+				        <li><a href="index1.html" class="ui-btn-active">Vendor</a></li>
+				        <li><a href="#">My cart</a></li>
+				        <li><a href="#">My Profile</a></li>
+				    </ul>
+				</div>
+			</div>	
+		</div>
+		
+		<script>
+            $(document).ready(function () {
+                $("#walmart").click(function () {
+                    window.location.href = "walmart.html";
+                });
+                $("#bestbuy").click(function () {
+                    window.location.href = "bestbuy.html";
+                });
+                $("#sears").click(function () {
+                    window.location.href = "sears.html";
+                });
+            });
+		</script>
+	</body>
+</html>
+
